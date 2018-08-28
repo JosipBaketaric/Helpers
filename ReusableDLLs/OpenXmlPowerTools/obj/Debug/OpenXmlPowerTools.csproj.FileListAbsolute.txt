@@ -1,0 +1,17 @@
+C:\Users\josipba\Documents\CTK\Open-Xml-PowerTools-baac3f922ead86294f446a1b4add4158adfaebfe\OpenXmlPowerTools\bin\Debug\OpenXmlPowerTools.dll
+C:\Users\josipba\Documents\CTK\Open-Xml-PowerTools-baac3f922ead86294f446a1b4add4158adfaebfe\OpenXmlPowerTools\bin\Debug\OpenXmlPowerTools.pdb
+C:\Users\josipba\Documents\CTK\Open-Xml-PowerTools-baac3f922ead86294f446a1b4add4158adfaebfe\OpenXmlPowerTools\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\josipba\Documents\CTK\Open-Xml-PowerTools-baac3f922ead86294f446a1b4add4158adfaebfe\OpenXmlPowerTools\bin\Debug\System.Management.Automation.dll
+C:\Users\josipba\Documents\CTK\Open-Xml-PowerTools-baac3f922ead86294f446a1b4add4158adfaebfe\OpenXmlPowerTools\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\josipba\Documents\CTK\Open-Xml-PowerTools-baac3f922ead86294f446a1b4add4158adfaebfe\OpenXmlPowerTools\obj\Debug\OpenXmlPowerTools.csproj.CoreCompileInputs.cache
+C:\Users\josipba\Documents\CTK\Open-Xml-PowerTools-baac3f922ead86294f446a1b4add4158adfaebfe\OpenXmlPowerTools\obj\Debug\OpenXmlPowerTools.dll
+C:\Users\josipba\Documents\CTK\Open-Xml-PowerTools-baac3f922ead86294f446a1b4add4158adfaebfe\OpenXmlPowerTools\obj\Debug\OpenXmlPowerTools.pdb
+C:\Users\josipba\Documents\CTK\ReusableDLLs\OpenXmlPowerTools\bin\Debug\OpenXmlPowerTools.dll
+C:\Users\josipba\Documents\CTK\ReusableDLLs\OpenXmlPowerTools\bin\Debug\OpenXmlPowerTools.pdb
+C:\Users\josipba\Documents\CTK\ReusableDLLs\OpenXmlPowerTools\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\josipba\Documents\CTK\ReusableDLLs\OpenXmlPowerTools\bin\Debug\System.Management.Automation.dll
+C:\Users\josipba\Documents\CTK\ReusableDLLs\OpenXmlPowerTools\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\josipba\Documents\CTK\ReusableDLLs\OpenXmlPowerTools\obj\Debug\OpenXmlPowerTools.csprojResolveAssemblyReference.cache
+C:\Users\josipba\Documents\CTK\ReusableDLLs\OpenXmlPowerTools\obj\Debug\OpenXmlPowerTools.csproj.CoreCompileInputs.cache
+C:\Users\josipba\Documents\CTK\ReusableDLLs\OpenXmlPowerTools\obj\Debug\OpenXmlPowerTools.dll
+C:\Users\josipba\Documents\CTK\ReusableDLLs\OpenXmlPowerTools\obj\Debug\OpenXmlPowerTools.pdb

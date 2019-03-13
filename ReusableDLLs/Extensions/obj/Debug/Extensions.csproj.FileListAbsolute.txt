@@ -4,3 +4,7 @@ C:\Users\josipba\Documents\CTK\ReusableDLLs\Extensions\obj\Debug\Extensions.cspr
 C:\Users\josipba\Documents\CTK\ReusableDLLs\Extensions\obj\Debug\Extensions.csproj.CoreCompileInputs.cache
 C:\Users\josipba\Documents\CTK\ReusableDLLs\Extensions\obj\Debug\Extensions.dll
 C:\Users\josipba\Documents\CTK\ReusableDLLs\Extensions\obj\Debug\Extensions.pdb
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\Extensions\obj\Debug\Extensions.csprojAssemblyReference.cache
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\Extensions\obj\Debug\Extensions.csproj.CoreCompileInputs.cache
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\Extensions\obj\Debug\Extensions.dll
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\Extensions\obj\Debug\Extensions.pdb

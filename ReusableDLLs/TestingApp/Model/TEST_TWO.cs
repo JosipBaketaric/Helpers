@@ -11,6 +11,11 @@ namespace TestingApp.Model
     {
         public int ID { get; set; }
         public string NAME { get; set; }
+        public List<int> NESTED_LIST { get;set;}
 
+        public TEST_TWO()
+        {
+            NESTED_LIST = new List<int>();
+        }
     }
 }

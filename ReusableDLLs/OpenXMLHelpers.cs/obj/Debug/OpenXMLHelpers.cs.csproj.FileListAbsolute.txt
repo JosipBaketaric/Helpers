@@ -9,3 +9,15 @@ C:\Users\josipba\Documents\CTK\ReusableDLLs\OpenXMLHelpers.cs\obj\Debug\OpenXMLH
 C:\Users\josipba\Documents\CTK\ReusableDLLs\OpenXMLHelpers.cs\obj\Debug\OpenXMLHelpers.cs.csproj.CoreCompileInputs.cache
 C:\Users\josipba\Documents\CTK\ReusableDLLs\OpenXMLHelpers.cs\obj\Debug\OpenXMLHelpers.cs.dll
 C:\Users\josipba\Documents\CTK\ReusableDLLs\OpenXMLHelpers.cs\obj\Debug\OpenXMLHelpers.cs.pdb
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\OpenXMLHelpers.cs\bin\Debug\OpenXMLHelpers.cs.dll
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\OpenXMLHelpers.cs\bin\Debug\OpenXMLHelpers.cs.pdb
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\OpenXMLHelpers.cs\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\OpenXMLHelpers.cs\bin\Debug\OpenXmlPowerTools.dll
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\OpenXMLHelpers.cs\bin\Debug\System.Management.Automation.dll
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\OpenXMLHelpers.cs\bin\Debug\OpenXmlPowerTools.pdb
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\OpenXMLHelpers.cs\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\OpenXMLHelpers.cs\obj\Debug\OpenXMLHelpers.cs.csprojAssemblyReference.cache
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\OpenXMLHelpers.cs\obj\Debug\OpenXMLHelpers.cs.csproj.CoreCompileInputs.cache
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\OpenXMLHelpers.cs\obj\Debug\OpenXMLHelpers.cs.csproj.CopyComplete
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\OpenXMLHelpers.cs\obj\Debug\OpenXMLHelpers.cs.dll
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\OpenXMLHelpers.cs\obj\Debug\OpenXMLHelpers.cs.pdb

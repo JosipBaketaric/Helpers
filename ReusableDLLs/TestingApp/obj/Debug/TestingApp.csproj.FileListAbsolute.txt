@@ -7,3 +7,13 @@ C:\Users\josipba\Documents\CTK\ReusableDLLs\TestingApp\obj\Debug\TestingApp.cspr
 C:\Users\josipba\Documents\CTK\ReusableDLLs\TestingApp\obj\Debug\TestingApp.csproj.CoreCompileInputs.cache
 C:\Users\josipba\Documents\CTK\ReusableDLLs\TestingApp\obj\Debug\TestingApp.exe
 C:\Users\josipba\Documents\CTK\ReusableDLLs\TestingApp\obj\Debug\TestingApp.pdb
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\TestingApp\bin\Debug\TestingApp.exe.config
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\TestingApp\bin\Debug\TestingApp.exe
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\TestingApp\bin\Debug\TestingApp.pdb
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\TestingApp\bin\Debug\Mapper.dll
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\TestingApp\bin\Debug\Mapper.pdb
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\TestingApp\obj\Debug\TestingApp.csprojResolveAssemblyReference.cache
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\TestingApp\obj\Debug\TestingApp.csproj.CoreCompileInputs.cache
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\TestingApp\obj\Debug\TestingApp.exe
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\TestingApp\obj\Debug\TestingApp.pdb
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\TestingApp\obj\Debug\TestingApp.csprojAssemblyReference.cache

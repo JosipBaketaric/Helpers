@@ -11,6 +11,11 @@ namespace TestingApp.Model
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public List<int> NestedList { get; set; }
 
+        public TestTwo()
+        {
+            NestedList = new List<int>();
+        }
     }
 }

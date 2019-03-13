@@ -4,3 +4,8 @@ C:\Users\josipba\Documents\CTK\ReusableDLLs\Mapper\obj\Debug\Mapper.csprojResolv
 C:\Users\josipba\Documents\CTK\ReusableDLLs\Mapper\obj\Debug\Mapper.csproj.CoreCompileInputs.cache
 C:\Users\josipba\Documents\CTK\ReusableDLLs\Mapper\obj\Debug\Mapper.dll
 C:\Users\josipba\Documents\CTK\ReusableDLLs\Mapper\obj\Debug\Mapper.pdb
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\Mapper\bin\Debug\Mapper.dll
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\Mapper\bin\Debug\Mapper.pdb
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\Mapper\obj\Debug\Mapper.csproj.CoreCompileInputs.cache
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\Mapper\obj\Debug\Mapper.dll
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\Mapper\obj\Debug\Mapper.pdb

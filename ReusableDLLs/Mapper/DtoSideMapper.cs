@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Mapper
 {
-    public class DtoSideMapper<DatabaseClass,DtoClass> 
+    internal class DtoSideMapper<DatabaseClass,DtoClass> 
         where DatabaseClass : class 
         where DtoClass : class        
     {
@@ -31,7 +31,7 @@ namespace Mapper
 
 
 
-        
+
 
     }
 }

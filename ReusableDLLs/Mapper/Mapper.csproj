@@ -40,6 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\MappingClassAttribute.cs" />
+    <Compile Include="Enumerators\MapperTypeEnum.cs" />
+    <Compile Include="Mapper.cs" />
+    <Compile Include="Mappers\BaseMapper.cs" />
+    <Compile Include="Mappers\SameNamesMapper.cs" />
     <Compile Include="Mappers\ConventionMapper.cs" />
     <Compile Include="DtoSideMapper.cs" />
     <Compile Include="DatabaseSideMapper.cs" />

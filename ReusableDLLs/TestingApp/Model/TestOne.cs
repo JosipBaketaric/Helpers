@@ -18,5 +18,7 @@ namespace TestingApp.Model
         {
             TestTwoListProp = new List<TestTwo>();
         }
+
+
     }
 }

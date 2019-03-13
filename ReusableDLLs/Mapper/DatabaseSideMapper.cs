@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Mapper
 {
-    public class DatabaseSideMapper<DatabaseClass,DtoClass> 
+    internal class DatabaseSideMapper<DatabaseClass,DtoClass> 
         where DatabaseClass : class 
         where DtoClass : class        
     {

@@ -35,6 +35,21 @@ namespace Extensions
             return Regex.Replace(Regex.Replace(str, @"(\P{Ll})(\P{Ll}\p{Ll})", "$1 $2"), @"(\p{Ll})(\P{Ll})", "$1 $2");
         }
 
+        public static string ToCETString(this DateTime value)
+        {
+            string result = "";
+            string format = "dd.MM.yyyy HH:mm";
+            result = value.ToString(format);
+            return result;
+        }
+
+        public static string ToShortCETString(this DateTime value)
+        {
+            string result = "";
+            string format = "dd.MM.yyyy";
+            result = value.ToString(format);
+            return result;
+        }
 
     }
 

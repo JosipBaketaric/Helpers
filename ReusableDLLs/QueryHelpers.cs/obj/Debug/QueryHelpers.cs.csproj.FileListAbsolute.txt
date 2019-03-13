@@ -1,0 +1,5 @@
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\QueryHelpers.cs\bin\Debug\QueryHelpers.cs.dll
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\QueryHelpers.cs\bin\Debug\QueryHelpers.cs.pdb
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\QueryHelpers.cs\obj\Debug\QueryHelpers.cs.csproj.CoreCompileInputs.cache
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\QueryHelpers.cs\obj\Debug\QueryHelpers.cs.dll
+C:\Users\josipba\Documents\CTK\Helpers\ReusableDLLs\QueryHelpers.cs\obj\Debug\QueryHelpers.cs.pdb

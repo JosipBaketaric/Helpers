@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="Attributes\MappingClassAttribute.cs" />
     <Compile Include="Enumerators\MapperTypeEnum.cs" />
+    <Compile Include="Interface\IDatabaseSideMapper.cs" />
+    <Compile Include="Interface\IDomainSideMapper.cs" />
     <Compile Include="Mapper.cs" />
     <Compile Include="Mappers\BaseMapper.cs" />
     <Compile Include="Mappers\SameNamesMapper.cs" />

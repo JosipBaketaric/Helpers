@@ -1,4 +1,5 @@
 ﻿using Mapper.Enumerators;
+using Mapper.Interface;
 using Mapper.Mappers;
 using Microsoft.Win32.SafeHandles;
 using System;
@@ -10,7 +11,8 @@ using System.Threading.Tasks;
 
 namespace Mapper
 {
-    public class Mapper<DatabaseClass, DtoClass> : IDisposable where DatabaseClass : class, new() where DtoClass : class, new()
+    public class Mapper<DatabaseClass, DtoClass> : IDisposable, IDatabaseSideMapper<DatabaseClass, DtoClass>, IDomainSideMapper<DatabaseClass, DtoClass> 
+        where DatabaseClass : class, new() where DtoClass : class, new() 
     {
         // Flag: Has Dispose already been called?
         private bool disposed = false;
@@ -40,6 +42,13 @@ namespace Mapper
 
             return result;
         }
+
+        public IEnumerable<DtoClass> ToDtoList(IEnumerable<DatabaseClass> databaseObjectList)
+        {
+            var result = _mapper.ToDtoList(databaseObjectList.ToList());
+            return result;
+        }
+
         public List<DtoClass> ToDtoList(List<DatabaseClass> databaseObjectList)
         {
             var result = _mapper.ToDtoList(databaseObjectList);
@@ -49,6 +58,13 @@ namespace Mapper
         public DatabaseClass ToDatabase(DtoClass origin)
         {
             var result = _mapper.ToDatabase(origin);
+
+            return result;
+        }
+
+        public IEnumerable<DatabaseClass> ToDatabaseList(IEnumerable<DtoClass> dtoList)
+        {
+            var result = _mapper.ToDatabaseList(dtoList.ToList());
 
             return result;
         }

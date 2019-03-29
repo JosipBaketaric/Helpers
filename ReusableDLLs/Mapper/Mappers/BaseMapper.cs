@@ -45,11 +45,13 @@ namespace Mapper.Mappers
                     //    .FirstOrDefault();
 
                     //if (mappingAttr == null)
-                        //continue;
+                    //continue;
 
                     if (value != null && value.Count() == 1)
                     {
-                        value = _utilities.ConvertObjectValueTo(value[0], new object[] { }, "ToDto", property.GetType());
+
+                        value = _utilities.ConvertObjectValueTo(value[0], new object[] { }, "ToDto", property.PropertyType);
+
                     }
                     if (value != null && value.Count() > 1)
                     {

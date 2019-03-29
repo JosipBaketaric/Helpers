@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mapper.Interface
 {
-    public interface IDomainSideMapper<DatabaseClass, DtoClass>: where DatabaseClass : class, new() where DtoClass : class, new()
+    public interface IDomainSideMapper<DatabaseClass, DtoClass> where DatabaseClass : class, new() where DtoClass : class, new()
     {
         DtoClass ToDto(DatabaseClass origin);
 

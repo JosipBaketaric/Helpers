@@ -30,7 +30,7 @@ namespace Mapper
 
         public void GetPropValue(object src, string propName, out object[] result)
         {
-            if(src == null || src.GetType() == null || src.GetType().GetProperty(propName, BindingFlags.Public | BindingFlags.Instance) == null
+            if (src == null || src.GetType() == null || src.GetType().GetProperty(propName, BindingFlags.Public | BindingFlags.Instance) == null
                 || src.GetType().GetProperty(propName) == null || src.GetType().GetProperty(propName).GetValue(src, null) == null)
             {
                 result = null;
@@ -53,27 +53,47 @@ namespace Mapper
 
         }
 
+
         public void SetObjectProperty(object src, string propName, object[] value)
         {
-            if(src == null || src.GetType() == null || src?.GetType().GetProperty(propName) == null)
+
+            SetObjectPropertyLogic(src, src.GetType(), propName, value);
+
+        }
+
+
+        private void SetObjectPropertyLogic(object src, Type type, string propName, object[] value)
+        {
+            if (src == null || src.GetType() == null || src?.GetType().GetProperty(propName) == null)
             {
                 return;
             }
 
-            PropertyInfo pi = src?.GetType().GetProperty(propName);
+            var targetType = IsNullableType(type) ? Nullable.GetUnderlyingType(type) : type;
 
+            PropertyInfo pi = targetType.GetProperty(propName);
 
             if (IsPropertyList(pi) && pi != null)
             {
-                
-                pi.SetValue(src, ConvertList(value.ToList(), pi.PropertyType, pi) );
+
+                pi.SetValue(src, ConvertList(value.ToList(), pi.PropertyType, pi));
                 return;
             }
 
+            PropertyInfo prop = targetType.GetProperty(propName, BindingFlags.Public | BindingFlags.Instance);
+            if (null != prop && prop.CanWrite)
+            {
+                prop.SetValue(src, value[0], null);
+            }
 
-            src.GetType().InvokeMember(propName,
-            BindingFlags.Instance | BindingFlags.Public | BindingFlags.SetProperty,
-            Type.DefaultBinder, src, value);
+            //type.InvokeMember(propName,
+            //BindingFlags.Instance | BindingFlags.Public | BindingFlags.SetProperty,
+            //Type.DefaultBinder, src, value);
+        }
+
+        private bool IsNullableType(Type type)
+        {
+            return type.IsGenericType && type.GetGenericTypeDefinition().Equals(typeof(Nullable<>));
         }
 
         public string SplitCamelCase(string str)
@@ -106,7 +126,7 @@ namespace Mapper
             //create mapper object
             object o = Activator.CreateInstance(makeme, args);
 
-            if(o == null)
+            if (o == null)
             {
                 return null;
             }
@@ -117,12 +137,12 @@ namespace Mapper
             //Type convertHolderType = instance.GetType();
             //MethodInfo theMethod = convertHolderType.GetMethod(convertMehod);
 
-            if(theMethod == null)
+            if (theMethod == null)
             {
 
             }
 
-            if(theMethod == null)
+            if (theMethod == null)
             {
                 return null;
             }

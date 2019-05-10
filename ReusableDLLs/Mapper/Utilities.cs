@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -44,7 +45,7 @@ namespace Mapper
 
             if (propValue is IEnumerable<object>)
             {
-                result = ((IEnumerable<object>)propValue).ToArray();
+                result = (propValue as IEnumerable<object>).ToArray();
             }
             else
             {
@@ -54,15 +55,15 @@ namespace Mapper
         }
 
 
-        public void SetObjectProperty(object src, string propName, object[] value)
+        public void SetObjectProperty(ref object src, string propName, object[] value)
         {
 
-            SetObjectPropertyLogic(src, src.GetType(), propName, value);
+            SetObjectPropertyLogic(ref src, src.GetType(), propName, value);
 
         }
 
 
-        private void SetObjectPropertyLogic(object src, Type type, string propName, object[] value)
+        private void SetObjectPropertyLogic(ref object src, Type type, string propName, object[] value)
         {
             if (src == null || src.GetType() == null || src?.GetType().GetProperty(propName) == null)
             {
@@ -75,9 +76,13 @@ namespace Mapper
 
             if (IsPropertyList(pi) && pi != null)
             {
+                var listConverted = ConvertList(value.ToList(), pi.PropertyType, pi);
 
-                pi.SetValue(src, ConvertList(value.ToList(), pi.PropertyType, pi));
-                return;
+                if (listConverted != null)
+                {
+                    pi.SetValue(src, listConverted);
+                    return;
+                }
             }
 
             PropertyInfo prop = targetType.GetProperty(propName, BindingFlags.Public | BindingFlags.Instance);
@@ -137,10 +142,6 @@ namespace Mapper
             //Type convertHolderType = instance.GetType();
             //MethodInfo theMethod = convertHolderType.GetMethod(convertMehod);
 
-            if (theMethod == null)
-            {
-
-            }
 
             if (theMethod == null)
             {
@@ -199,6 +200,15 @@ namespace Mapper
             return false;
         }
 
+        public static bool IsObjectList(object src)
+        {
+            if (src != null && src.GetType().FullName.Contains("Collections."))
+            {
+                return true;
+            }
+            return false;
+        }
+
         public static object ConvertList(List<object> value, Type type, PropertyInfo pi)
         {
             //Create list
@@ -206,14 +216,44 @@ namespace Mapper
             var instance = (IList)Activator.CreateInstance(type);
             var containedType = type.GenericTypeArguments.First();
 
+            var containedList = value.FirstOrDefault();
+
+            if (containedList == null)
+            {
+                return instance;
+            }
+
+            //Only one element in array
+            if ((containedList as IList) == null)
+            {
+                instance.Add(Convert.ChangeType(containedList, containedType));
+                return instance;
+            }
+
             //Assign values
-            foreach (var item in value)
+            foreach (var item in (containedList as IList))
             {
                 instance.Add(Convert.ChangeType(item, containedType));
             }
 
             return instance;
         }
+
+        public static bool IsAny(IEnumerable data)
+        {
+            if (data == null)
+            {
+                return false;
+            }
+
+            foreach (var item in data)
+            {
+                return true;
+            }
+            return false;
+        }
+
+
 
 
 

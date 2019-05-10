@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TestingApp.Model
 {
-    public class TestOne : DtoSideMapper<TEST_ONE, TestOne>
+    public class TestOne
     {
         public int Id { get; set; }
         public string NameAndLastName { get; set; }

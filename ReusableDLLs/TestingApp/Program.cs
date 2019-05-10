@@ -14,8 +14,13 @@ namespace TestingApp
             TEST_ONE testOneDb = new TEST_ONE();
             DataGenerator(testOneDb);
 
-            var result = testOneDb.ToDto();
-            var rez2 = result.ToDatabase();
+            using (Mapper.Mapper<TEST_ONE, TestOne> _mapper = new Mapper.Mapper<TEST_ONE, TestOne>(Mapper.Enumerators.MapperTypeEnum.ConventionBasedMapper))
+            {
+                _mapper.CreateMapDto(x => x.NameAndLastName, x => { return x.ID + ":" + x.NAME_AND_LAST_NAME; } );
+                //_mapper.CreateMapDatabase(x => x.NAME_AND_LAST_NAME, x => { return x.NameAndLastName.Substring(0,2); });
+
+                var result = _mapper.ToDto(testOneDb);
+            }
 
         }
 
@@ -32,7 +37,7 @@ namespace TestingApp
 
             var list = GenerateList();
 
-            foreach(var item in list)
+            foreach (var item in list)
             {
                 var innerList = GenerateIntList();
                 item.NESTED_LIST.AddRange(innerList);

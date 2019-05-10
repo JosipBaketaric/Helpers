@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TestingApp.Model
 {
-    public class TEST_ONE : DatabaseSideMapper<TEST_ONE, TestOne>
+    public class TEST_ONE
     {
         public int ID { get; set; }
         public string NAME_AND_LAST_NAME { get; set; }
